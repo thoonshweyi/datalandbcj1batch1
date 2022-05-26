@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+/*Start Header Section */
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)) , url('../assets/img/etc/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+}
+.menuitems{
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px;
+
+    transition: all 0.6s;
+}
+.menuitems:hover{
+    color: #7aa3eb;
+}
+.lines1,.lines2,.lines3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+
+    transition: all 0.5s;
+}
+.changes .lines1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.changes .lines2{
+    opacity: 0;
+}
+.changes .lines3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* Start Banner */
+.banners{
+    width: 80%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner-titles{
+    animation: bannerani;
+    animation-duration: 2s;
+}
+.banner-texts{
+    animation-name: bannerani;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+
+    animation-fill-mode: backwards;
+}
+@keyframes bannerani {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* End Banner */
+/* End Header Section */
+
+/* Start Mission Section */
+.missions{
+    background-color: #031c2b;
+}
+.underlines{
+    width: 200px;
+    border: 3px solid #fff;
+    margin: auto;
+}
+.cameraimgs.fromlefts{
+    animation: fromleft 2s;
+}
+.missiontexts.fromrights{
+    animation: fromright 2s;
+}
+@keyframes fromleft {
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fromright {
+    0%{
+        transform: translate(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+/* End Mission Section */
+
+/* Start Collection Section */
+.boxshadow{
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.6);
+}
+.card{
+    position: relative;
+}
+.headings{
+    width: 70%;
+    background-color: #222;
+    font-size: 14px;
+    opacity: 0.7;
+
+    position: absolute;
+    top: 70%;
+    right: 0;
+
+    transition: all 0.5s;
+}
+.headings:hover{
+    opacity: 1;
+}
+/* End Collection Section */
+
+/* Start Gallery Section */
+.darkunderlines{
+    width: 200px;
+    border: 3px solid #aaa;
+    margin: auto;
+}
+.listitems{
+    color: #777;
+    cursor: pointer;
+}
+.listitems.active{
+    color: #06b7bd;
+}
+/* End Gallery Section */
+
+/* Start Customer Section */
+
+.customers{
+    background-color:#17111f;
+}
+
+/* End Customer Section */
+
+/* Start Pricing Section */
+
+.cardones,.cardtwos,.cardthrees{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0.0,0,0.5)) , url(../assets/img/etc/camerabg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carditems{
+    width: 55%;
+    margin: auto;
+    border-bottom: 1px solid #eee;
+}
+.carditems:last-child{
+    border-bottom: 0;
+}
+.cardbuttons{
+    width: 130px;
+    background-color: #de4121;
+    border-radius: 25px;
+    box-shadow: 5px 8px 20px #000;
+}
+.cardbuttons:hover{
+    background-color: #eb5a3d;
+    transform: translateY(-2px);
+}
+.cardones.fromlefts{
+    animation-name: fromleftani;
+    animation-duration: 2s;
+}
+.cardtwos.frombottoms{
+    animation-name: frombottomani;
+    animation-duration: 2s;
+}
+.cardthrees.fromrights{
+    animation-name: fromrightani;
+    animation-duration: 2s;
+}
+
+@keyframes fromleftani {
+    0%{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes frombottomani {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromrightani {
+    0%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+/* End Pricing Section */
+
+/* Start Contact Section */
+
+.contacts{
+    background-image: linear-gradient(
+        105deg,
+        rgba(0,0,0,1) 50%,
+        transparent 50%
+    ) , url(../assets/img/etc/lady.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.inputs{
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.inputs:focus{
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #de4121;
+    box-shadow: none;
+}
+.label{
+    color: #999;
+    display: block;
+    margin-left: 4px;
+    margin-top: -60px;
+    transition: all 0.3s;
+}
+.inputs:placeholder-shown + label{
+    visibility: hidden;
+    transform: translate(20px,20px);
+}
+.submitbuttons{
+    background-color: #de4121;
+    color: #fff;
+}
+.submitbuttons:hover{
+    background-color: #eb5a3d;
+    transform: translateY(-3px);
+    /* transition: ; */
+}
+/* End Contact Section */
+
+/*Start Footer Section  */
+.footerlinks{
+    font-size: 13px;
+    color: #eee;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+.footerlinks:hover{
+    color: #15a0eb;
+}
+/* End Footer SEction */

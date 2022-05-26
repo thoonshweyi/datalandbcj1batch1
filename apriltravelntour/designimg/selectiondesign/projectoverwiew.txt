@@ -1,0 +1,15 @@
+1.Header
+	banner (where to , when , travel type, guest)
+2.Popular Destination
+	just show photo of destinations
+3.Special Travel Offer
+	spof1(main design)+spof2
+4.Tour Packages
+	pk1(main design)+pk2
+5.Why Choose Us
+	wchooseus
+6.Testimony(customer foodback)
+
+7.Contact Us
+
+8.Footer

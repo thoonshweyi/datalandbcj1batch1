@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+/* Start Header Section */
+.header{
+    height: 100vh;
+    background-image: url('../asserts/img/cover/beach.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.navbuttons{
+    /* background-color: rgba(63,208,212,1); */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    border: transparent;
+    margin: 0 5px;
+}
+.navbuttons:hover,.navbuttons:focus{
+    color:#fff
+}
+.searchbuttons{
+    display: block;
+    color: #222;
+    transform: rotateY(180deg);
+    background: transparent;
+    border: 0;
+}
+.searchbuttons:focus{
+    outline: 0;
+}
+.line1s,.line2s,.line3s{
+    width: 23px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+
+    transition: all 0.5s;
+
+}
+.changes .line1s{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.changes .line2s{
+    opacity: 0;
+}
+.changes .line3s{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/* End Header Section */
+
+
+/* Start Banner Section */
+.banners{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bannertexts{
+    animation: jumpani 2s ease;
+}
+@keyframes jumpani{
+    0%{
+        transform: translate(-200px,-200px);
+    }
+    25%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,-70px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+/* End Banner Section */
+
+/* Start Search Tour Section */
+
+.searchtours{
+    width: 100%;
+
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbars{
+    /* width: 70%; */
+    display: inline-block;
+    margin: auto;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+}
+.searchitems{
+    border-right: 1px solid #888;
+    padding: 1rem 1.5rem;
+    padding-right: 3.5rem;
+}
+
+/* End Search Tour Section */
+
+/* Start Title */
+
+.circles{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: khaki;
+    border-radius: 50%;
+    margin: 0 5px;
+
+    transition: all 0.5s;
+}
+.circles:nth-of-type(1){
+    transform: translateX(-500px);
+}
+.circles:nth-of-type(2){
+    transform: translateX(-400px);
+}
+.circles:nth-of-type(3){
+    transform: translateX(400px);
+}
+.circles:nth-of-type(4){
+    transform: translateX(500px);
+}
+
+.circles.run:nth-of-type(1){
+    transform: translateX(0);
+}
+.circles.run:nth-of-type(2){
+    transform: translateX(0);
+}
+.circles.run:nth-of-type(3){
+    transform: translateX(0);
+}
+.circles.run:nth-of-type(4){
+    transform: translateX(0);
+}
+
+/* End Title */
+
+
+/* Start Special Offer */
+
+/* .image-containers{
+    width: 100%;
+    height: 200px;
+
+    background-image: url(../asserts/img/specialoffer/malaysia.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+.specialoffers .card{
+    /* border-radius: 10px; */
+    border-radius: 5px 5px 50px 5px;
+    box-shadow: 3px 2px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+
+    position: relative;
+}
+.card img{
+    object-fit: cover;
+}
+.offerprices{
+    font-size: 35px;
+}
+.dollar-signs{
+    font-size: 1.2rem;
+}
+.offerprices,.dollar-signs{
+    vertical-align: middle;
+}
+.oldprices{
+    color: #555;
+    font-weight: 700;
+    display: inline-block;
+    transform: translate(10px,8px);
+}
+.spoffs{
+    width: 50%;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card .list-inline{
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+/* End Special Offer */
+
+/* Start Why Choose Us(About Us Section) */
+.abouts{
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.5)
+    )
+    ,
+    url('../asserts/img/cover/romecover.jpg') 
+    ;   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.marks{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos{
+    color: rgba(255, 255, 255, 0.8);
+}
+.aboutuss.fromlefts{
+    animation-name: fromleftani;
+    animation-duration: 1.5s;
+}
+.aboutuss.frombottoms{
+    animation-name: frombottomani;
+    animation-duration: 1.5s;
+}
+.aboutuss.fromrights{
+    animation-name: fromrightani;
+    animation-duration: 1.5s;
+}
+@keyframes fromleftani{
+    0%{
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    100%{
+        
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes frombottomani{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fromrightani{
+    0%{
+        opacity: 0;
+        transform: translate(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/* End Why Choose Us(About Us Section) */
+
+/* Start Popular Packages */
+.pks{
+    color: #fff;
+    background-color: #050a45;
+}
+.packages{
+    position: relative;
+}
+.packageinfos{
+
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.packageprices{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.carousel-indicators li{
+    background-color: springgreen;
+}
+/* End Popular Packages */
+
+
+/* Strat Contact Us Section */
+.sticks{
+    display: inline-block;
+    width: 3px;
+    height: 30px;
+    background-color: rgba(194, 157, 89, 1);
+
+    vertical-align: middle;
+}
+.contactuss{
+    background-color: #f9f9f9;
+}
+.contactinfos.fromlefts{
+    opacity: 0;
+    animation: fromleft 0.8s;
+    animation-fill-mode: forwards;
+}
+.contactinfos.fromlefts.locations{
+    animation-delay: 0;
+}
+.contactinfos.fromlefts.phones{
+    animation-delay: 0.4s;
+}
+.contactinfos.fromlefts.emails{
+    animation-delay: 0.8s;
+}
+.contacts{
+    width: 50px;
+    height: 50px;
+    background-color: #f4f4f4;
+    color: rgba(194, 157, 89, 1);
+    border-radius: 5px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactlinks{
+    color: #000;
+    text-decoration: none;
+}
+
+.locationicons{
+    animation: biggerani 1s infinite;
+}
+.telicons{
+    animation: shakeani 1s ease-in-out infinite;
+    /* transform : rotate(-20deg); */
+    
+}
+.emailicons{
+
+    animation: jampani 1s ease-in infinite;
+}
+@keyframes fromleft {
+    0%{
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes biggerani{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(2);
+    }
+}
+@keyframes shakeani{
+    0%{
+        transform : rotate(-20deg);
+    }
+    100%{
+        transform : rotate(20deg);
+    }
+}
+@keyframes jampani{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.maps{
+    width: 100%;
+    height: 90vh;
+    /* min-height: 40vh; */
+}
+/* End Contact Us Section */
+
+/* Start Popular Destination Section */
+
+.desbtns{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    margin: 0 10px;
+}
+.desbtns.actives{
+    color: #fff;
+    background-color: #498bf5;
+    border: 0;
+}
+
+.hiddens{
+    display: none;
+}
+/* End Popular Destination Section */
+
+/* Start Our Customer */
+
+.customers{
+    background: linear-gradient(
+        -45deg,
+        
+        #498bf5 50%,
+        #f4f4f4 0%
+        
+        
+    );
+}
+
+/* End Our Customer */
+
+/* Start Footer */
+
+.footers{
+    background-color: #090f3b;
+}
+.footerlinks{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+}
+.footerlinks:hover{
+    color: #498bf5;
+    
+}
+/* End Footer */

@@ -1,0 +1,28 @@
+//Animation
+$('selector').show(miliseconds);
+$('selector').hide(miliseconds);
+
+//Events
+$('selector').click(function(){
+     //code to execute
+});
+$('selector').scroll(function(){
+     //code to execute
+     $(this).scrollTop();//scrollY value of element
+});
+
+//DOM
+$('selector').addClass('');
+$('selector').removeClass('');
+$('selector').toggleClass('');
+
+$('selector').attr('attribute_name');//get attributre value
+
+$('selector').not('selector')
+//Remove elements from the set of matched elements.
+
+$('selector').filter('selector')
+//Reduce the set of matched elements to those that match the selector
+
+$('selector').siblings()
+//Get the siblings of each element in the set of matched elements, optionally filtered by a selector.
